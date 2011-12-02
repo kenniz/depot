@@ -7,6 +7,9 @@ gem 'rails', '3.1.3'
 
 gem 'sqlite3'
 
+# Gems use by execjs in ruby platform, provide JavaScript Runtime
+
+gem 'therubyracer', :platform => :ruby
 
 # Gems used only for assets and not required
 # in production environments by default.
