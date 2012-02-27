@@ -9,7 +9,7 @@
 <body id="store" >
   <div id="banner" >
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || t('.title') %>
   </div>
   <div id="columns" >
     <div id="side" >
@@ -21,7 +21,10 @@
         <% end %>
       </div>
 
-      <%= link_to 'Home', store_path %><br />
+      <%= link_to t('.home'), store_path %><br />
+      <%= link_to t('.questions'), store_path %><br />
+      <%= link_to t('.news'), store_path %><br />
+      <%= link_to t('.contact'), store_path %><br />
 
       <% if session[:user_id] %>
         <br />
