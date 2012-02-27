@@ -20,10 +20,17 @@
         <% end %>
         <% end %>
       </div>
-      <%= link_to 'Manage Product', products_path %><br />
-      <%= link_to 'Store', store_path %><br />
-      <%= link_to 'Shopping Cart', carts_path %><br />
-      <a href="http://www..../contact" >Contact</a><br />
+
+      <%= link_to 'Home', store_path %><br />
+
+      <% if session[:user_id] %>
+        <br />
+        <%= link_to 'Orders', orders_path %><br />
+        <%= link_to 'Products', products_path %><br />
+        <%= link_to 'Users', users_path %><br />
+        <br />
+        <%= button_to 'Logout', logout_path, :method => :delete %>
+      <% end %>
     </div>
     <div id="main" >
       <%= yield %>
