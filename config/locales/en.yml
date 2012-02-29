@@ -14,7 +14,7 @@ en:
 
   layouts:
     application:
-      title:        "Pragmatic Bookshelf test"
+      title:        "Pragmatic Bookshelf"
       home:         "Home"
       questions:    "Questions"
       news:         "News"
