@@ -4,7 +4,7 @@ set :domain, 'localhost'
 set :application, 'depot'
 
 # file paths
-set :repository, "git@ssh.github.com:#{user}/#{application}.git"
+set :repository, "git@github.com:#{user}/#{application}.git"
 set :deploy_to, "/home/#{user}/#{application}"
 
 # distriute your applications across servers (the instructions below put them 
