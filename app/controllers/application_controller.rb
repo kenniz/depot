@@ -35,4 +35,10 @@ class ApplicationController < ActionController::Base
   def default_url_options
     {:locale => I18n.locale}
   end
+
+  def image_src(email_address)
+    require 'digest/md5'
+    hash = Digest::MD5.hexdigest(email_address)
+    image_src = "http://www.gravatar.com/avatar/#{hash}"
+  end
 end

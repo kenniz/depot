@@ -40,6 +40,9 @@
         <br />
         <%= button_to 'Logout', logout_path, :method => :delete %>
       <% end %>
+      <% if @image_src %>
+        <%= image_tag @image_src %>
+      <% end %>
     </div>
     <div id="main" >
       <%= yield %>
